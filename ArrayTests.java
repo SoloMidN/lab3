@@ -10,6 +10,7 @@ public class ArrayTests {
     int[] input2 = {1,2,3,4,5};
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{5,4,3,2,1}, input2);
+
 	}
 
 
@@ -18,7 +19,13 @@ public class ArrayTests {
     int[] input1 = { };
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
     int[] input2 = {1,2,3,4,5};
-    ArrayExamples.reverseInPlace(input2);
+    ArrayExamples.reversed(input2);
     assertArrayEquals(new int[]{5,4,3,2,1}, input2);
   }
+
+//   @Test
+//   public void testAverageWithoutLowest(){
+//     double[] input3 = {2.0,2.0,2.0,3.0,4.0,5.0};
+//     assertEquals(4,ArrayExamples.averageWithoutLowest(input3),0);
+//   }
 }
